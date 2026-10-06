@@ -1,0 +1,14 @@
+{
+    "signature": "Idalida Mendez",
+    "responses": [{
+        "id": "account-deleted",
+        "title": "Account disabled & deleted",
+        "lines" :[
+            "Hello,",
+            "",
+            "The account has been disabled and marked to be deleted.",
+            "",
+            "{signature}"
+        ]
+    }]
+}

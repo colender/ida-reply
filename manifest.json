@@ -1,0 +1,23 @@
+{
+    "manifest_version": 3,
+    "name": "IdaReply",
+    "version": "1.0",
+    "description": "Way to add responses to Textboxes for easy replies.",
+    "icons": {
+        "48": "icons/border-48.png"
+    },
+    "browser_specific_settings": {
+        "gecko": {
+            "id": "colender.m@gmail.com",
+            "data_collection_permissions": {
+                "required": [
+                    "none"
+                ]
+            }
+        }
+    },
+
+    "background":{"scripts":["background.js"]},
+    "permissions": ["menus","scripting","activeTab"]
+
+}
