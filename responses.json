@@ -3,12 +3,40 @@
     "responses": [{
         "id": "account-deleted",
         "title": "Account disabled & deleted",
-        "lines" :[
+        "lines": [
             "Hello,",
             "",
             "The account has been disabled and marked to be deleted.",
             "",
-            "{signature}"
+            "-{signature}"
         ]
-    }]
+    },
+
+    {
+        "id": "sso-mfa-enabled",
+        "title": "Request has been completed SSO/MFA Enabled",
+        "lines":[
+            "Hello,",
+            "",
+            "Your request has been completed and SSO/MFA enabled.",
+            "",
+            "-{signature}"
+        ]
+    },
+
+    {
+        "id" : "mfa-another-account",
+        "title": "Another account with x department",
+        "lines": [
+            "Hello,",
+            "",
+            "The user has another account with {Department} department. I won't enabled MFA/SSO until the other account is disable or the logon has been released.",
+            "Email:{Email}",
+            "Logon:{Logon}",
+            "Temporary Password:{Password}",
+            "",
+            "-{signature}"
+        ]
+    }
+]
 }
