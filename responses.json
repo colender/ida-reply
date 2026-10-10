@@ -30,10 +30,37 @@
         "lines": [
             "Hello,",
             "",
-            "The user has another account with {Department} department. I won't enabled MFA/SSO until the other account is disable or the logon has been released.",
-            "Email:{Email}",
-            "Logon:{Logon}",
-            "Temporary Password:{Password}",
+            "The user has another account with {{Department}} department. I won't enabled MFA/SSO until the other account is disable or the logon has been released.",
+            "",
+            "Email:{{Email}}",
+            "Logon:{{Logon}}",
+            "Temporary Password:{{Password}}",
+            "",
+            "-{signature}"
+        ]
+    },
+    {
+        "id": "account-created",
+        "title": "Request has been completed",
+        "lines": [
+            "Hello,",
+            "",
+            "Your request has been completed.",
+            "",
+            "Email Address: {{Email}}",
+            "Logon: {{Logon}}",
+            "Temporary Password: {{Password}}",
+            "",
+            "-{signature}"
+        ]
+    },
+    {
+        "id": "accout-create-mfa-unenabled",
+        "title" : "Account Created 2 Accounts in Systems",
+        "lines": [
+            "Hello,",
+            "",
+            "The account has been created but I couldn't enabled MFA/SSO because there is two accounts one with just the UCLALogon and the other just UID please contact IT Support Center to migrated both accounts together. For the mean time here is the login information.",
             "",
             "-{signature}"
         ]

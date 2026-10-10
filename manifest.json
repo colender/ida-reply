@@ -3,9 +3,6 @@
     "name": "IdaReply",
     "version": "1.0",
     "description": "Way to add responses to Textboxes for easy replies.",
-    "icons": {
-        "48": "icons/border-48.png"
-    },
     "browser_specific_settings": {
         "gecko": {
             "id": "colender.m@gmail.com",
@@ -13,11 +10,21 @@
                 "required": [
                     "none"
                 ]
-            }
+            },
+            "update_url": "https://secretleafsociety.com/api/firefox/idareply/updates"
         }
+    },
+    "icons": {
+        "48": "icons/icon-48.png"
     },
 
     "background":{"scripts":["background.js"]},
-    "permissions": ["menus","scripting","activeTab"]
+    "permissions": ["menus","scripting","activeTab"],
+    "content_scripts": [{
+        "matches": ["<all_urls>"],
+        "js": ["idareply.js"],
+        "all_frames" : true
+    }
+    ]
 
 }
