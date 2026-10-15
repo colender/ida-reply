@@ -15,11 +15,22 @@
         }
     },
     "icons": {
-        "48": "icons/icon-48.png"
+        "48": "icons/ida-reply-48.png"
     },
 
+    "action":{
+        "default_icon" : {
+            "16": "buttons/ida-reply-16.png",
+            "38": "buttons/ida-reply-38.png",
+            "48": "buttons/ida-reply-48.png"
+        },
+        "default_title": "Ida Reply",
+        "default_popup": "popup/popup.html"
+    },
+    
+
     "background":{"scripts":["background.js"]},
-    "permissions": ["menus","scripting","activeTab"],
+    "permissions": ["menus","scripting","activeTab","storage"],
     "content_scripts": [{
         "matches": ["<all_urls>"],
         "js": ["idareply.js"],

@@ -1,6 +1,18 @@
 {
-    "signature": "Idalida Mendez",
-    "responses": [{
+    "signature": "Idalia Mendez",
+    "responses": [
+        
+        {
+            "id" : "task-completed",
+            "title": "Completed",
+            "lines": [
+                "",
+                "Completed",
+                ""
+            ]
+        },
+        
+        {
         "id": "account-deleted",
         "title": "Account disabled & deleted",
         "lines": [
