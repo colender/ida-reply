@@ -5,4 +5,5 @@ button {
     text-align:center;
     font-size: 1em;
     cursor:pointer;
+    display:block;
 }
