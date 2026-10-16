@@ -14,8 +14,10 @@ browser.runtime.onInstalled.addListener(async ()=> {
 
 
     browser.menus.create({id: "ida-root",title:"Ida Reply",contexts: ["editable"]});
+    browser.menus.create({id:"ida-responses",title:"Responses",contexts:["editable"]});
+    browser.menus.create({id:"ida-signature",title:"Change Signature Name",contexts:["editable"]});
     for(const r of responses.responses){
-        browser.menus.create({ id: r.id,parentId: "ida-root",title:r.title,contexts:["editable"]})
+        browser.menus.create({ id: r.id,parentId: "ida-sub",title:r.title,contexts:["editable"]})
     }
 });
 

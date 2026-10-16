@@ -3,7 +3,18 @@ button {
     width:100%;
     padding:5px;
     text-align:center;
-    font-size: 1em;
+    font-size: 1.4em;
     cursor:pointer;
     display:block;
+    background-color:#E0FFB1;
+    color:#626464;
+    border-radius: 5px;
 }
+
+div#popup-content {
+    display:flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 300px;
+}
+
